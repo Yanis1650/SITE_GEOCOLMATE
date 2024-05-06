@@ -70,6 +70,15 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+#intro video {
+    width: 750px; /* Ajustez la largeur selon vos préférences */
+    height: auto; /* Conserve le rapport hauteur/largeur de la vidéo */
+    float: right; /*Déplace la vidéo vers la droite*/
+	top: 100px;
+    margin: 0 0 1em 2em; /* Ajoute une marge en dessous et à gauche de la vidéo */
+    border-radius: 10px; /* Arrondit les coins de la vidéo */
+}
+
 
 /* Basic */
 
@@ -2586,12 +2595,24 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		border-radius: 0.25em;
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+.image {
+    border-radius: 0.25em;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle; /* Aligne l'image verticalement au centre */
+}
+
+#intro iframe {
+    width: 720px; /* Ajustez la largeur selon vos préférences */
+    height: 405px; /* Ajustez la hauteur selon vos préférences (rapport hauteur/largeur de la vidéo) */
+    display: inline-block; /* Permet d'aligner la vidéo avec l'image */
+    vertical-align: middle; /* Aligne la vidéo verticalement au centre */
+    margin: 0 0 1em 2em; /* Ajoute une marge en dessous et à gauche de la vidéo */
+    border-radius: 10px; /* Arrondit les coins de la vidéo */
+}
+
+
 
 		.image img {
 			border-radius: 0.25em;
